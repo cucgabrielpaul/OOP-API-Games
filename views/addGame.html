@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add new game</title>
+    <link rel="icon" href="../img/gamepad.png">
+    <link rel="stylesheet" href="/views/addGame.css" />
+  </head>
+
+  <body>
+    <h1></h1>
+    <div id="game-item"></div>
+
+    <form action="#" name="form_name" id="form_id">
+      <div class="container">
+        <h1>Add Game to API</h1>
+        <br />
+        <p>Please fill this form to add a game to API.</p>
+        <br />
+        <label for="title">Title :</label>
+        <input
+          id="title"
+          type="text"
+          placeholder="Title"
+          name="title"
+          required
+        />
+        <br />
+        <br />
+        <label for="releaseDate">Release date :</label>
+        <input
+          id="releaseDate"
+          type="date"
+          placeholder="Release date"
+          name="releaseDate"
+          required
+        />
+        <br />
+        <br />
+        <label for="genre">Genre :</label>
+        <input
+          id="genre"
+          type="text"
+          placeholder="Genre"
+          name="genre"
+          required
+        />
+        <br />
+        <br />
+        <label for="publisher">Publisher :</label>
+        <input
+          id="publisher"
+          type="text"
+          placeholder="Publisher"
+          name="publisher"
+          required
+        />
+        <br />
+        <br />
+        <label for="imageUrl">Image URL :</label>
+        <input
+          id="imageUrl"
+          type="text"
+          placeholder="Image URL"
+          name="imageUrl"
+          required
+        />
+        <br />
+        <br />
+        <button class="createbtn registerbtn" type="submit" onclick="submitForm()">
+          Create
+        </button>
+        <button class="backbtn registerbtn" type="submit" onclick="backForm()" >
+          Back
+        </button>
+      </div>
+    </form>
+
+    <script src="../models/Game.js"></script>
+    <script src="../viewmodel/addGame.js"></script>
+  </body>
+</html>

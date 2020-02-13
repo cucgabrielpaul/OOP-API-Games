@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("/img/aquaman.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+
+  section {
+    padding:40px 200px;
+    color: white;
+
+    div#template {
+      h2,
+      h3,
+      h4,
+      img,
+      p,
+      strong {
+        padding-top: 20px;
+      }
+
+
+    }
+  }
+}

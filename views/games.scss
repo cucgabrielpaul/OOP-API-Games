@@ -1,0 +1,135 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("/img/iron-man.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+
+  div.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px 4px $mauve;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 50px;
+
+      li {
+        list-style-type: none;
+
+        input {
+          width: 240px;
+          padding: 4px 16px;
+          font-size: 18px;
+          font-weight: bold;
+          border: 1px solid $gray;
+          background: none;
+          box-shadow: 0 2px 3px 1px $mauve;
+          color: white;
+
+          &:link,
+          &:visited {
+            color: green;
+            background-color: Purple;
+            text-decoration: none;
+            target-new: none;
+          }
+
+          &:hover {
+            color: $mauve;
+            background-color: $lightblue1;
+            border-radius: 32px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    h1 {
+      color: white;
+    }
+
+    div#list-games {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+
+        a {
+          color: white;
+          cursor: pointer;
+          text-decoration: none;
+
+          &:hover {
+            color: $mauve;
+          }
+
+          &:active,
+          &:focus {
+            border: 0;
+            outline: inherit;
+          }
+        }
+
+        img {
+          width: 280px;
+          height: 300px;
+          margin: 10px;
+        }
+
+        div {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          button {
+            box-shadow: 0 2px 3px 1px $mauve;
+            background: linear-gradient(to bottom, $lightblue1 30%, $lightblue2 100%);
+            background-color: $lightblue1;
+            border: 1px solid $gray;
+            cursor: pointer;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 4px 16px;
+            text-decoration: none;
+
+            &:hover {
+              background: linear-gradient(to bottom, $lightblue2 30%, $lightblue1 100%);
+              background-color: $lightblue2;
+              border-radius: 32px;
+              color: $mauve;
+            }
+
+            &:focus {
+              outline: inherit;
+            }
+
+            &:active {
+              position: relative;
+              top: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    div#template {
+      display: none;
+    }
+  }
+}

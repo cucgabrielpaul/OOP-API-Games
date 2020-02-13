@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("/img/iron-man.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+body div.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  box-shadow: 0 0 10px 4px #D05093;
+}
+
+body div.wrapper ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+body div.wrapper ul li {
+  list-style-type: none;
+}
+
+body div.wrapper ul li input {
+  width: 240px;
+  padding: 4px 16px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #5b6178;
+  background: none;
+  box-shadow: 0 2px 3px 1px #D05093;
+  color: white;
+}
+
+body div.wrapper ul li input:link, body div.wrapper ul li input:visited {
+  color: green;
+  background-color: Purple;
+  text-decoration: none;
+  target-new: none;
+}
+
+body div.wrapper ul li input:hover {
+  color: #D05093;
+  background-color: #33bdef;
+  border-radius: 32px;
+  text-decoration: none;
+}
+
+body div.wrapper h1 {
+  color: white;
+}
+
+body div.wrapper div#list-games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+body div.wrapper div#list-games div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+body div.wrapper div#list-games div a {
+  color: white;
+  text-decoration: none;
+}
+
+body div.wrapper div#list-games div a:hover {
+  color: #D05093;
+}
+
+body div.wrapper div#list-games div a:active, body div.wrapper div#list-games div a:focus {
+  border: 0;
+  outline: inherit;
+}
+
+body div.wrapper div#list-games div img {
+  width: 280px;
+  height: 300px;
+  margin: 10px;
+}
+
+body div.wrapper div#list-games div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+body div.wrapper div#list-games div div button {
+  box-shadow: 0 2px 3px 1px #D05093;
+  background: linear-gradient(to bottom, #33bdef 30%, #019ad2 100%);
+  background-color: #33bdef;
+  border: 1px solid #5b6178;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px 16px;
+  text-decoration: none;
+}
+
+body div.wrapper div#list-games div div button:hover {
+  background: linear-gradient(to bottom, #019ad2 30%, #33bdef 100%);
+  background-color: #019ad2;
+  border-radius: 32px;
+  color: #D05093;
+}
+
+body div.wrapper div#list-games div div button:focus {
+  outline: inherit;
+}
+
+body div.wrapper div#list-games div div button:active {
+  position: relative;
+  top: 5px;
+}
+
+body div.wrapper div#template {
+  display: none;
+}
+
+/*# sourceMappingURL=games.css.map */
