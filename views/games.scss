@@ -98,7 +98,11 @@ body {
 
           button {
             box-shadow: 0 2px 3px 1px $mauve;
-            background: linear-gradient(to bottom, $lightblue1 30%, $lightblue2 100%);
+            background: linear-gradient(
+              to bottom,
+              $lightblue1 30%,
+              $lightblue2 100%
+            );
             background-color: $lightblue1;
             border: 1px solid $gray;
             cursor: pointer;
@@ -109,7 +113,11 @@ body {
             text-decoration: none;
 
             &:hover {
-              background: linear-gradient(to bottom, $lightblue2 30%, $lightblue1 100%);
+              background: linear-gradient(
+                to bottom,
+                $lightblue2 30%,
+                $lightblue1 100%
+              );
               background-color: $lightblue2;
               border-radius: 32px;
               color: $mauve;

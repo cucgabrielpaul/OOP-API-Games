@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -10,35 +11,46 @@ body {
   background-attachment: fixed;
   background-size: 100% auto;
 }
+
 body form#form_id {
   padding: 50px;
 }
+
 body form#form_id h1,
 body form#form_id p {
   color: white;
   font-weight: bold;
 }
+
 body form#form_id label {
   display: inline-block;
   color: white;
   font-weight: bold;
   width: 110px;
 }
+
 body form#form_id input {
   color: black;
   margin: 10px 0;
   min-width: 250px;
   min-height: 20px;
   border-radius: 5px;
+  -webkit-transition: border-color 0.5s ease-out;
   transition: border-color 0.5s ease-out;
 }
+
 body form#form_id input:required {
+  -webkit-box-shadow: 0 3px 3px 1px blue;
   box-shadow: 0 3px 3px 1px blue;
 }
+
 body form#form_id input:invalid {
+  -webkit-box-shadow: 0 3px 3px 1px red;
   box-shadow: 0 3px 3px 1px red;
 }
+
 body form#form_id button.registerbtn {
+  -webkit-box-shadow: 0 2px 3px 1px red;
   box-shadow: 0 2px 3px 1px red;
   border: 1px solid #5b6178;
   cursor: pointer;
@@ -50,15 +62,17 @@ body form#form_id button.registerbtn {
   margin-right: 20px;
   text-decoration: none;
 }
+
 body form#form_id button.registerbtn:hover {
   border-radius: 32px;
 }
+
 body form#form_id button.registerbtn:focus {
   outline: inherit;
 }
+
 body form#form_id button.registerbtn:active {
   position: relative;
   top: 5px;
 }
-
 /*# sourceMappingURL=addGame.css.map */

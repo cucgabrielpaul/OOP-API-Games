@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -14,13 +15,18 @@ body {
 body div.wrapper {
   margin: 0 auto;
   max-width: 1200px;
-  box-shadow: 0 0 10px 4px #D05093;
+  -webkit-box-shadow: 0 0 10px 4px #D05093;
+          box-shadow: 0 0 10px 4px #D05093;
 }
 
 body div.wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 50px;
 }
 
@@ -35,7 +41,8 @@ body div.wrapper ul li input {
   font-weight: bold;
   border: 1px solid #5b6178;
   background: none;
-  box-shadow: 0 2px 3px 1px #D05093;
+  -webkit-box-shadow: 0 2px 3px 1px #D05093;
+          box-shadow: 0 2px 3px 1px #D05093;
   color: white;
 }
 
@@ -58,20 +65,33 @@ body div.wrapper h1 {
 }
 
 body div.wrapper div#list-games {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 body div.wrapper div#list-games div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
 }
 
 body div.wrapper div#list-games div a {
   color: white;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -91,13 +111,22 @@ body div.wrapper div#list-games div img {
 }
 
 body div.wrapper div#list-games div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body div.wrapper div#list-games div div button {
-  box-shadow: 0 2px 3px 1px #D05093;
+  -webkit-box-shadow: 0 2px 3px 1px #D05093;
+          box-shadow: 0 2px 3px 1px #D05093;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #33bdef), to(#019ad2));
   background: linear-gradient(to bottom, #33bdef 30%, #019ad2 100%);
   background-color: #33bdef;
   border: 1px solid #5b6178;
@@ -110,6 +139,7 @@ body div.wrapper div#list-games div div button {
 }
 
 body div.wrapper div#list-games div div button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #019ad2), to(#33bdef));
   background: linear-gradient(to bottom, #019ad2 30%, #33bdef 100%);
   background-color: #019ad2;
   border-radius: 32px;
@@ -128,5 +158,4 @@ body div.wrapper div#list-games div div button:active {
 body div.wrapper div#template {
   display: none;
 }
-
 /*# sourceMappingURL=games.css.map */

@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games Page</title>
+    <link rel="icon" href="../img/gamepad.png" />
+    <link rel="stylesheet" href="/views/games.css" />
+    <script src="../models/Game.js"></script>
+    <script src="../viewmodel/games.js"></script>
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Games Page</title>
-  <link rel="icon" href="../img/gamepad.png">
-  <link rel="stylesheet" href="/views/games.css" />
-  <script src="../models/Game.js"></script>
-  <script src="../viewmodel/games.js"></script>
-</head>
+  <body>
+    <div class="wrapper">
+      <ul>
+        <li>
+          <input type="button" value="Fetch Games" onclick="game.getAll()" />
+        </li>
+        <li>
+          <input
+            type="button"
+            value="Delete All Games"
+            onclick="game.deleteAll()"
+          />
+        </li>
+        <li>
+          <input
+            type="button"
+            value="Regenerate API"
+            onclick="game.regenerate()"
+          />
+        </li>
+        <li>
+          <input
+            type="button"
+            value="Add Game"
+            onclick="window.location.href='addGame.html'"
+            target="_blank"
+          />
+        </li>
+      </ul>
 
-<body>
-  <div class="wrapper">
-    <ul>
-      <li>
-        <input type="button" value="Fetch Games" onclick="game.getAll()" />
-      </li>
-      <li>
-        <input type="button" value="Delete All Games" onclick="game.deleteAll()" />
-      </li>
-      <li>
-        <input type="button" value="Regenerate API" onclick="game.regenerate()" />
-      </li>
-      <li>
-        <input type="button" value="Add Game" onclick="window.location.href='addGame.html'" target="_blank" />
-      </li>
-    </ul>
-
-    <div id="list-games"></div>
-    <div id="template">
-      <a target="_blank">
-        <h3></h3>
-      </a>
-      <img />
-      <div>
-        <button id="details">Details</button>
-        <button id="edit">EditTitle</button>
-        <button id="delete">Delete</button>
+      <div id="list-games"></div>
+      <div id="template">
+        <a target="_blank">
+          <h3></h3>
+        </a>
+        <img />
+        <div>
+          <button id="details">Details</button>
+          <button id="edit">EditTitle</button>
+          <button id="delete">Delete</button>
+        </div>
       </div>
     </div>
-  </div>
-
-
-</body>
-
+  </body>
 </html>

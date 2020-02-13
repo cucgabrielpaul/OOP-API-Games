@@ -11,10 +11,12 @@ body {
   background-attachment: fixed;
   background-size: 100%;
 }
+
 body section {
   padding: 40px 200px;
   color: white;
 }
+
 body section div#template h2,
 body section div#template h3,
 body section div#template h4,
@@ -23,5 +25,4 @@ body section div#template p,
 body section div#template strong {
   padding-top: 20px;
 }
-
 /*# sourceMappingURL=gameDetails.css.map */
