@@ -1,6 +1,6 @@
 var game = new Game();
 
-game.getAll().then(data => {  
+game.getAll().then(data => {
   displayGamesListHtml(data);
 });
 
@@ -52,7 +52,7 @@ function editGame(event) {
   var saveElement = document.createElement("button");
   var cancelElement = document.createElement("button");
 
-  editButton.setAttribute("disabled",true);
+  editButton.setAttribute("disabled", true);
 
   gameInfo.gameElement.appendChild(labelElement);
   gameInfo.gameElement.appendChild(inputElement);
@@ -92,7 +92,7 @@ function editGame(event) {
   cancelElement.style.margin = "5px 0";
   cancelElement.innerHTML = "Cancel";
 
-  saveElement.addEventListener('mouseleave', () => {
+  saveElement.addEventListener("mouseleave", () => {
     saveElement.style.boxShadow = "0 2px 3px 1px #D05093";
     saveElement.style.backgroundColor = "#33bdef";
     saveElement.style.border = "1px solid #5b6178";
@@ -102,14 +102,14 @@ function editGame(event) {
     saveElement.style.fontWeight = "bold";
     saveElement.style.padding = "4px 16px";
     saveElement.style.cursor = "pointer";
-  })
+  });
 
-  saveElement.addEventListener('mouseenter', () => {
+  saveElement.addEventListener("mouseenter", () => {
     saveElement.style.borderRadius = "32px";
     saveElement.style.color = "#D05093";
-  })
+  });
 
-  cancelElement.addEventListener('mouseleave', () => {
+  cancelElement.addEventListener("mouseleave", () => {
     cancelElement.style.boxShadow = "0 2px 3px 1px #D05093";
     cancelElement.style.backgroundColor = "#33bdef";
     cancelElement.style.border = "1px solid #5b6178";
@@ -119,32 +119,29 @@ function editGame(event) {
     cancelElement.style.fontWeight = "bold";
     cancelElement.style.padding = "4px 8px";
     cancelElement.style.cursor = "pointer";
-  })
+  });
 
-  cancelElement.addEventListener('mouseenter', () => {
+  cancelElement.addEventListener("mouseenter", () => {
     cancelElement.style.borderRadius = "32px";
     cancelElement.style.color = "#D05093";
-  })
+  });
 
-  saveElement.addEventListener("click", (clickSaveEvent) => {
+  saveElement.addEventListener("click", clickSaveEvent => {
     var titleValue = inputElement.value;
-    game.update(gameInfo.gameId, titleValue).then((data) => {
+    game.update(gameInfo.gameId, titleValue).then(data => {
       if (titleValue == "") {
-        alert("This field is empty ")
+        alert("This field is empty ");
       } else {
         gameInfo.gameElement.querySelector("h3").innerHTML = data.title;
       }
-
     });
   });
   cancelElement.addEventListener("click", () => {
-    editButton.setAttribute("disabled",false);
+    editButton.setAttribute("disabled", false);
     labelElement.style.display = "none";
     inputElement.style.display = "none";
     saveElement.style.display = "none";
     cancelElement.style.display = "none";
-
-
   });
 }
 

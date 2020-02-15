@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("/img/aquaman.jpg");
+  background-image: url("../img/aquaman.jpg");
   background-attachment: fixed;
   background-size: 100%;
 }

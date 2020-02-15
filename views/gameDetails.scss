@@ -7,12 +7,12 @@
 }
 
 body {
-  background-image: url("/img/aquaman.jpg");
+  background-image: url("../img/aquaman.jpg");
   background-attachment: fixed;
   background-size: 100%;
 
   section {
-    padding:40px 200px;
+    padding: 40px 200px;
     color: white;
 
     div#template {
@@ -24,8 +24,6 @@ body {
       strong {
         padding-top: 20px;
       }
-
-
     }
   }
 }

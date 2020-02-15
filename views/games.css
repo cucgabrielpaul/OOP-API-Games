@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("/img/iron-man.jpg");
+  background-image: url("../img/iron-man.jpg");
   background-attachment: fixed;
   background-size: 100%;
 }

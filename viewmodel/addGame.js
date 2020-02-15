@@ -8,7 +8,8 @@ let submitForm = () => {
   var publisher = document.getElementById("publisher").value;
   var imageUrl = document.getElementById("imageUrl").value;
 
-  game.create({
+  game
+    .create({
       title: title,
       genre: genre,
       releaseDate: releaseDate,
@@ -16,8 +17,7 @@ let submitForm = () => {
       imageUrl: imageUrl.toString()
     })
     .then(function result() {
-      location.href = "/views/games.html";
+      location.href = "./games.html";
     });
-
-}
-let backForm = () => location.pathname = "/views/games.html"
+};
+let backForm = () => (location.href = "./games.html");

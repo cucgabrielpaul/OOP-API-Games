@@ -5,8 +5,9 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 body {
-  background-image: url("/img/kbb3vr617kly.png");
+  background-image: url("../img/kbb3vr617kly.png");
   background-attachment: fixed;
   background-size: 100% auto;
 
@@ -25,10 +26,10 @@ body {
       width: 110px;
     }
     input {
-      color:black;
+      color: black;
       margin: 10px 0;
-      min-width: 250px;
-      min-height: 20px;
+      min-width: 230px;
+      height: 20px;
       border-radius: 5px;
       transition: border-color 0.5s ease-out;
     }
@@ -36,7 +37,7 @@ body {
       box-shadow: 0 3px 3px 1px blue;
     }
     input:invalid {
-    box-shadow: 0 3px 3px 1px red;
+      box-shadow: 0 3px 3px 1px red;
     }
     button.registerbtn {
       box-shadow: 0 2px 3px 1px red;
@@ -47,7 +48,7 @@ body {
       font-weight: bold;
       padding: 4px 16px;
       width: 90px;
-      margin-right: 20px;
+      margin: 10px;
       text-decoration: none;
 
       &:hover {

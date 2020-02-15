@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Games Page</title>
     <link rel="icon" href="../img/gamepad.png" />
-    <link rel="stylesheet" href="/views/games.css" />
+    <link rel="stylesheet" href="games.css" />
     <script src="../models/Game.js"></script>
     <script src="../viewmodel/games.js"></script>
   </head>
@@ -14,28 +14,19 @@
     <div class="wrapper">
       <ul>
         <li>
-          <input type="button" value="Fetch Games" onclick="game.getAll()" />
-        </li>
-        <li>
-          <input
-            type="button"
-            value="Delete All Games"
-            onclick="game.deleteAll()"
-          />
-        </li>
-        <li>
-          <input
-            type="button"
-            value="Regenerate API"
-            onclick="game.regenerate()"
-          />
-        </li>
-        <li>
           <input
             type="button"
             value="Add Game"
             onclick="window.location.href='addGame.html'"
             target="_blank"
+          />
+        </li>
+
+        <li>
+          <input
+            type="button"
+            value="Regenerate API"
+            onclick="game.regenerate()"
           />
         </li>
       </ul>
