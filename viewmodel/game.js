@@ -36,3 +36,7 @@ function getQueryValue(key) {
   }
   return false;
 }
+
+let backbutton = () => {
+  location.href = "./games.html";
+};

@@ -129,15 +129,18 @@ function editGame(event) {
   saveElement.addEventListener("click", clickSaveEvent => {
     var titleValue = inputElement.value;
     game.update(gameInfo.gameId, titleValue).then(data => {
-      if (titleValue == "") {
-        alert("This field is empty ");
-      } else {
+      if (titleValue) {
         gameInfo.gameElement.querySelector("h3").innerHTML = data.title;
+        labelElement.style.display = "none";
+        inputElement.style.display = "none";
+        saveElement.style.display = "none";
+        cancelElement.style.display = "none";
+      } else {
+        alert("This field is empty ");
       }
     });
   });
   cancelElement.addEventListener("click", () => {
-    editButton.setAttribute("disabled", false);
     labelElement.style.display = "none";
     inputElement.style.display = "none";
     saveElement.style.display = "none";

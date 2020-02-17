@@ -50,7 +50,6 @@ body div.wrapper ul li input:link, body div.wrapper ul li input:visited {
   color: green;
   background-color: Purple;
   text-decoration: none;
-  target-new: none;
 }
 
 body div.wrapper ul li input:hover {

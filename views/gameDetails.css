@@ -23,6 +23,39 @@ body section div#template h4,
 body section div#template img,
 body section div#template p,
 body section div#template strong {
-  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+body section div#template button {
+  -webkit-box-shadow: 0 2px 3px 1px white;
+          box-shadow: 0 2px 3px 1px white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #33bdef), to(#019ad2));
+  background: linear-gradient(to bottom, #33bdef 30%, #019ad2 100%);
+  background-color: #33bdef;
+  border: 1px solid #5b6178;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px 16px;
+  text-decoration: none;
+}
+
+body section div#template button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #019ad2), to(#33bdef));
+  background: linear-gradient(to bottom, #019ad2 30%, #33bdef 100%);
+  border-radius: 32px;
+}
+
+body section div#template button:focus {
+  outline: inherit;
+}
+
+body section div#template button:active {
+  position: relative;
+  top: 5px;
 }
 /*# sourceMappingURL=gameDetails.css.map */
